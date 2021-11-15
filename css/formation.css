@@ -133,13 +133,12 @@ h6{
     border-bottom-right-radius: 25px;
     font-weight: bold;
 }
-
 .initiation{
     color: #fff;
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 280px;
+    top: 380px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     font-weight: bold;
@@ -149,7 +148,7 @@ h6{
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 380px;
+    top: 580px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     font-weight: bold;
@@ -193,8 +192,7 @@ h6{
     top: 640px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 .d-flex{
     display: flex !important;   
@@ -221,6 +219,8 @@ h6{
     border-right: 25px transparent solid;
     border-top: 20px #CE0033 solid;
     width: 0px;height: 0;
+    position: absolute;
+    top: 26%;
 }
 
 @media screen and (max-width: 768px){
@@ -229,7 +229,7 @@ h6{
         border-right: 25px transparent solid;
         border-top: 20px #CE0033 solid;
         width: 0px;height: 0;
-        transform: translateX(450%);
+        transform: translateX(400%);
     }
 } 
 @media screen and (max-width: 1024px){
