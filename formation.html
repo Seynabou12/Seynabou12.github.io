@@ -12,6 +12,17 @@
 </head>
 
 <body>
+    <!-- <div class="toast show position-absolute end-0">
+        <div class="toast-header bg-danger text-white">
+            <strong class="me-auto">Formations</strong>
+            <small>Maintenant</small>
+            <button type="button" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+            Bienvenue dans la rubrique formation!
+        </div>
+        
+    </div> -->
     <!--Intégration du Header et responsivité-->
     <main>
         <section class="container">
@@ -26,21 +37,39 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#">Acceuil</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Fabrique</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">Formations</a>
+                        <!-- <li class="nav-item"><a class="nav-link active" href="#">Formations</a>
                             <div class="bg-danger h-25 w-100 mt-3" ></div>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle show active" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="true">Formations</a>
+                            <div class="bg-danger h-25 w-100 mt-3"></div>
+                            <div class="dropdown-menu show" data-bs-popper="none">
+                                <a class="dropdown-item" href="#">Par Parcours</a>
+                                <a class="dropdown-item" href="#">Par Public</a>
+                                <a class="dropdown-item" href="#">Par Partenariats</a>
+                            </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Partenariats</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Espaces</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Entités</a></li>
-                        <li class="nav-item-dropdown"><i class="bi bi-search"></i>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Fr
-                            </a>
-                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">An</a></li>
-                            </ul>
+                        <li class="nav-item-dropdown "><i class="bi bi-search  mb-2"></i>
+                        <li>
+                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <a class="nav-link   ms-5" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Français
+                                </a>
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle show"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                                    <div class="dropdown-menu show" aria-labelledby="btnGroupDrop4"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 38px);"
+                                        data-popper-placement="bottom-start">
+                                        <a class="dropdown-item" href="#">Français</a>
+                                        <a class="dropdown-item" href="#">Anglais</a>
+                                    </div>
+                                </div>
                         </li>
                         <li class="nav-item"><a href="#" class="btn btn-danger rounded-pill">Contacter</a> </li>
                     </ul>
@@ -49,16 +78,13 @@
         </section>
 
         <!--Intégration de la Banniére et responsivité -->
-
-        <section class="banniere">
-            <div class="motif">
-                <div class="img-fluid" id="imgBan">
-                    <h1 class="title-age">FORMATIONS</h1>
-                </div>
-            </div>
-                
-
+        <section >
+            <figure class="">
+                <img src="../images/imagbanniere.jpg" alt="" class="img-fluid" id="imgBan">
+                <figcaption>FORMATIONS</figcaption>
+            </figure>
         </section>
+        
 
         <!--Intégration de la barre de recherche et responsivité -->
 
@@ -73,12 +99,13 @@
             </nav>
         </section>
 
+
         <!--Intégration de la Banniére et responsivité -->
         <section class="container overflow-hidden">
             <article>
                 <div class="row">
                     <h2 class="title mt-5">PAR PARCOURS</h2>
-                    
+
                     <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
                         although modern physicists
                         usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
@@ -89,16 +116,35 @@
                 </div>
             </article>
 
-            <!--Intégration des card et responsivité -->
-            <section class="parparcours">
+            <!--  -->
+            <section>
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="bar d-flex flex-column justify-content-center">
+                    <div class="col-12 d-flex flex-md-row flex-sm-row  mb-3 justify-content-center parcou ">
+                        <div class="btn-group d-inline-block d-md-none" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-outline-danger" for="btnradio1">DECOUVERTE</label>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-outline-danger" for="btnradio2">INITIATION</label>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-outline-danger" for="btnradio3">METIER</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Intégration des card et responsivité -->
+            <section class="parc">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 parc d-none d-md-inline-block">
+                        <div class="bar d-flex flex-column pub">
                             <div class="nav-bar-subdivision d-flex flex-column justify-content-between">
                                 <div class="rectangle d-flex justify-content-start align-items-center ">
 
                                     <h5 class="btn btn-danger d-flex decouverte"> <img
-                                            src="images/iconDiscoverRouge-1.svg" class="icons" alt=""><span>DECOUVERTE</span> </h5>
+                                            src="images/iconDiscoverRouge-1.svg" class="icons"
+                                            alt=""><span>DECOUVERTE</span> </h5>
                                 </div>
                                 <div class="rectangle d-flex justify-content-start align-items-center">
                                     <h5 class="btn btn-danger d-flex initiation"><img src="images/IconFemmeBlanc-1.svg"
@@ -107,12 +153,13 @@
                                 <div class="rectangle d-flex justify-content-start align-items-center">
 
                                     <h5 class="btn btn-danger d-flex metier"><img
-                                            src="images/IconOrienteMetierBlanc-1.svg" class="icon" alt=""><span>METIER</span> </h5>
+                                            src="images/IconOrienteMetierBlanc-1.svg" class="icon"
+                                            alt=""><span>METIER</span> </h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="col-sm-12 col-md-8 col-lg-8 mt-5">
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-6">
                                 <div class="card text-center mb-4">
@@ -181,7 +228,7 @@
             <article>
                 <div class="row">
                     <h2 class=" title mt-5">PAR PUBLIC</h2>
-                    
+
                     <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
                         although modern physicists
                         usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
@@ -192,44 +239,67 @@
                 </div>
             </article>
 
-            <!-- Intégration des card et responsivité -->
-            <section class="parpublic">
+            <section>
+                <div class="row ">
+                    <div class="col-12 col-12 d-flex flex-md-row flex-sm-row mb-3 justify-content-center publi">
+                        <div class="btn-group d-inline-block d-md-none" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-outline-danger" for="btnradio1">FEMMES</label>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-outline-danger" for="btnradio2">KIDS</label>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-outline-danger" for="btnradio3">PSH</label>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                checked="">
+                            <label class="btn btn-outline-danger" for="btnradio3">REFUGIES</label>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                checked="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Intégration des card et responsivité  -->
+            <section class="">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-sm-12 col-md-4 col-lg-4 parc d-none d-md-inline-block pub">
                         <div class="bar d-flex flex-column justify-content-center">
                             <div class="nav-bar-subdivision d-flex flex-column justify-content-between">
                                 <div class="rectangle d-flex justify-content-start align-items-center ">
 
                                     <h5 class="btn btn-danger d-flex femmes"> <img src="images/IconFemmeRouge-1.svg"
-                                        class="icons" alt=""><span>FEMMES</span> </h5>
+                                            class="icons" alt=""><span>FEMMES</span> </h5>
                                 </div>
                                 <div class="rectangle d-flex justify-content-start align-items-center">
                                     <h5 class="btn btn-danger d-flex kids"><img src="images/IconKidsblanc-1.svg"
-                                        class="icon" alt=""><span>KIDS</span> </h5>
+                                            class="icon" alt=""><span>KIDS</span> </h5>
                                 </div>
                                 <div class="rectangle d-flex justify-content-start align-items-center">
 
                                     <h5 class="btn btn-danger d-flex psh"><img src="images/IconPshblanc-1.svg"
-                                        class="icon" alt=""><span>PSH</span> </h5>
+                                            class="icon" alt=""><span>PSH</span> </h5>
                                 </div>
                                 <div class="rectangle d-flex justify-content-start align-items-center">
 
                                     <h5 class="btn btn-danger d-flex refugies"><img src="images/IconrefugieBlanc-1.svg"
-                                        class="icon" alt=""><span>REFUGIES</span></h5>
+                                            class="icon" alt=""><span>REFUGIES</span></h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="col-sm-12 col-md-8 col-lg-8 mt-5">
                         <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
                                 <div class="card text-center mb-4">
                                     <img src="images/management.jpeg" class="card-img-top img-card" alt="...">
                                     <div class="card-body">
                                         <h6 class="card-title">COMMUNITY MANAGEMENT</h6>
                                         <p class="card-text">At in neque convallissemper
                                             nunc platea eu eu. Faucibus porta faucibus sagittis dictum
-                                            metus elementum quis eu diam.</p>
+                                            metus elementum quis eu diam.
+                                        </p>
                                         <a href="#" class="btn btn-danger rounded-pill">En Savoir plus</a>
                                     </div>
                                 </div>
@@ -283,7 +353,7 @@
         </section>
         <div class="container">
             <div class="row justify-content-end overflow-x-hidden affiche text-right">
-               Tout Afficher
+                Tout Afficher
             </div>
         </div>
         <!--Intégration des card et responsivité -->
@@ -306,16 +376,18 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 h-75">
                         <div class="card text-center mb-4">
-                            <p class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
-                               <strong>Ecole IA Microsoft by
-                                Simplon-
-                               Développeur.Euse En
-                           Intelligence Artificielle</strong> </p>
+                            <p
+                                class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
+                                <strong>Ecole IA Microsoft by
+                                    Simplon-
+                                    Développeur.Euse En
+                                    Intelligence Artificielle</strong>
+                            </p>
                             <div class="triangle"></div>
                             <div class="card-body mt-4 ">
                                 <img src="images/microsoft.png" alt="...">
                                 <p class="card-text mt-2">Le parcours de formation
-                                    est organisé en six mois formation intense suivid'un 
+                                    est organisé en six mois formation intense suivid'un
                                     contrat de professionnalisation de 12mois en alternance
                                 </p>
                                 <a href="#" class="btn btn-danger rounded-pill">Decouvrir la formation</a>
@@ -324,15 +396,17 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 h-75">
                         <div class="card text-center mb-4">
-                            <p class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
-                               <strong>IA Business School TPE/
-                                PME- Développeur.Euse
-                            En Intelligence Artificielle</strong> </p>
+                            <p
+                                class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
+                                <strong>IA Business School TPE/
+                                    PME- Développeur.Euse
+                                    En Intelligence Artificielle</strong>
+                            </p>
                             <div class="triangle"></div>
                             <div class="card-body mt-4 ">
                                 <img src="images/iese.png" alt="...">
                                 <p class="card-text mt-2">Le parcours de formation
-                                    est organisé en six mois formation intense suivid'un 
+                                    est organisé en six mois formation intense suivid'un
                                     contrat de professionnalisation de 12mois en alternance
                                 </p>
                                 <a href="#" class="btn btn-danger rounded-pill">Decouvrir la formation</a>
@@ -341,16 +415,18 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 h-75">
                         <div class="card text-center mb-4">
-                            <p class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
-                           <strong> Ecole IA Microsoft by
-                            Simplon-
-                            Développeur.Euse En
-                            Intelligence Artificielle</strong></p>
+                            <p
+                                class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
+                                <strong> Ecole IA Microsoft by
+                                    Simplon-
+                                    Développeur.Euse En
+                                    Intelligence Artificielle</strong>
+                            </p>
                             <div class="triangle"></div>
                             <div class="card-body mt-4 ">
                                 <img src="images/microsoft.png" alt="...">
                                 <p class="card-text mt-2">Le parcours de formation
-                                    est organisé en six mois formation intense suivid'un 
+                                    est organisé en six mois formation intense suivid'un
                                     contrat de professionnalisation de 12mois en alternance
                                 </p>
                                 <a href="#" class="btn btn-danger rounded-pill">Decouvrir la formation</a>
@@ -376,16 +452,16 @@
                     </div>
                     <div class="row mt-5">
                         <div class="col-md-2">
-                            <img src="images/twitter.png" class="twitter" alt="" >
+                            <img src="images/twitter.png" class="twitter" alt="">
                         </div>
                         <div class="col-md-2">
-                            <img src="images/facebook.png"  class="face" alt="" >
+                            <img src="images/facebook.png" class="face" alt="">
                         </div>
                         <div class="col-md-2">
-                            <img src="images/instagram.png"  class="insta" alt="" >
+                            <img src="images/instagram.png" class="insta" alt="">
                         </div>
                         <div class="col-md-2">
-                            <img src="images/youtube-icon.svg"  class="youtube" alt="">
+                            <img src="images/youtube-icon.svg" class="youtube" alt="">
                         </div>
                     </div>
                 </div>
@@ -425,8 +501,8 @@
                 <div class="col-sm-12 col-md-3 col-lg-3 text-white mt-5">
                     <h3><strong> Notre newsletter</strong></h3>
                     <p><strong>Inscrivez-vous à notre
-                        <br> newsletter pour ne pas manquer
-                        <br> aucunes de nos activité</strong> 
+                            <br> newsletter pour ne pas manquer
+                            <br> aucunes de nos activité</strong>
                     </p>
                     <br>
                     <form class="d-flex mb-1">
@@ -438,14 +514,14 @@
         </footer>
     </main>
     <footer class=" bg-danger  text-center text-white mb-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6 class="texte-end mt-5 w-50"><strong>2021 Simplon. All rights reserved.</strong></h6>
-                </div>
-                <div class="col-md-6">
-                    <p class="texte-start mt-5  w-50">Made with by <strong>SimplonP4</strong></hp>
-                </div>
+        <div class="row">
+            <div class="col">
+                <h6 class="texte-end w-50"><strong>2021 Simplon. All rights reserved.</strong></h6>
             </div>
+            <div class="col">
+                <p class="texte-start w-50">Made with by <strong>SimplonP4</strong></hp>
+            </div>
+        </div>
     </footer>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
