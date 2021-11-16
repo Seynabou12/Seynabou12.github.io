@@ -76,9 +76,9 @@ figure figcaption{
 .title{
     color: #CE0033;
 }
-/* .affiche{
+ .affiche{
     text-decoration: underline;
-} */
+}
 .card-body .triangle{
     height: auto;
     position: absolute;
