@@ -20,9 +20,19 @@ nav ul{
 #imgBan{
     filter: saturate(0);
     width: 100%;
-    height: auto;
+    height: 800px;
     background-image: url('../images/imagbanniere.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+    /* background-position:center; */
 }
+.motif{
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/imagbanniere.jpg');
+    background-size: contain;
+}
+
 .title-age{
     position: absolute;
     top: 50%;
@@ -250,11 +260,3 @@ h6{
         transform: translate(290%, 60%);
     }
 } 
-@media screen and (max-width: 768px){
-    .imgBan{
-        filter: saturate(0);
-        width: 100%;
-        height: 800px;
-        background-image: url('../images/imagbanniere.jpg');
-    }
-}
