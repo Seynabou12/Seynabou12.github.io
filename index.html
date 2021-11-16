@@ -12,20 +12,10 @@
 </head>
 
 <body>
-    <!-- <div class="toast show position-absolute end-0">
-        <div class="toast-header bg-danger text-white">
-            <strong class="me-auto">Formations</strong>
-            <small>Maintenant</small>
-            <button type="button" class="btn-close"></button>
-        </div>
-        <div class="toast-body">
-            Bienvenue dans la rubrique formation!
-        </div>
-        
-    </div> -->
+    
     <!--Intégration du Header et responsivité-->
     <main>
-        <section class="container">
+        <section class="container-fluid">
             <header class="navbar navbar-expand-md navbar-light px-3 mt-4 ">
                 <a href="#" class="navbar-brand">
                     <img src="images/logoSimplon.png" alt="logo" style="width: 150px;">
@@ -37,9 +27,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#">Acceuil</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Fabrique</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link active" href="#">Formations</a>
-                            <div class="bg-danger h-25 w-100 mt-3" ></div>
-                        </li> -->
+                       
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle show active" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-haspopup="true" aria-expanded="true">Formations</a>
@@ -76,7 +64,7 @@
         </section>
 
 
-        <!--Intégration de la barre de recherche et responsivité -->
+        <!--Intégration de la barre de recherche -->
 
         <section>
             <nav class="navbar navbar-light bg-white">
@@ -89,7 +77,8 @@
             </nav>
         </section>
         
-        <!--Intégration de la Banniére et responsivité -->
+     <!--Intégration des card et la barre partie decouverte -->
+
         <section class="container overflow-hidden">
             <article>
                     <h2 class="title mt-5">PAR PARCOURS</h2>
@@ -102,26 +91,25 @@
                         physical universe.
                     </h5>
             </article>
-
             <section>
                 <div class="row">
                     <div class="col-12 d-flex flex-md-row flex-sm-row  mb-3 mt-4 justify-content-center parcou ">
                         <div class="btn-group d-inline-block d-md-none" role="group"
                             aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                checked="">
-                            <label class="btn btn-danger" for="btnradio1">DECOUVERTE</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
-                                checked="">
-                            <label class="btn btn-outline-danger" for="btnradio2">INITIATION</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                                checked="">
-                            <label class="btn btn-outline-danger" for="btnradio3">METIER</label>
+                            <input type="radio" class="btn-check"  autocomplete="off"
+                                >
+                            <label class="btn btn-danger" >DECOUVERTE</label>
+                            <input type="radio" class="btn-check"  autocomplete="off"
+                                >
+                            <label class="btn btn-outline-danger" >INITIATION</label>
+                            <input type="radio" class="btn-check"   autocomplete="off"
+>
+                            <label class="btn btn-outline-danger">METIER</label>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--Intégration des card et responsivité -->
+            <!--Intégration des card et la barre partie decouverte -->
             <section class="parc">
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 parc d-none d-md-inline-block">
@@ -140,8 +128,8 @@
                                 <div class="rectangle d-flex justify-content-start align-items-center">
 
                                     <h5 class="btn btn-danger d-flex metier"><img
-                                            src="images/IconOrienteMetierBlanc-1.svg" class="icon"
-                                            alt=""><span>METIER</span> </h5>
+                                        src="images/IconOrienteMetierBlanc-1.svg" class="icon"
+                                        alt=""><span>METIER</span> </h5>
                                 </div>
                             </div>
                         </div>
@@ -226,25 +214,21 @@
                
             </article>
 
+
             <section>
                 <div class="row ">
                     <div class="col-12 col-12 d-flex flex-md-row flex-sm-row mb-3 mt-4 justify-content-center publi">
                         <div class="btn-group d-inline-block d-md-none" role="group"
                             aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                checked="">
+                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
                             <label class="btn btn-danger" for="btnradio1">FEMMES</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
-                                checked="">
+                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
                             <label class="btn btn-outline-danger" for="btnradio2">KIDS</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                                checked="">
+                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
                             <label class="btn btn-outline-danger" for="btnradio3">PSH</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                                checked="">
+                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
                             <label class="btn btn-outline-danger" for="btnradio3">REFUGIES</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                                checked="">
+                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -511,7 +495,7 @@
             </div>
             <div class="col-sm-12 col-md-6  hearts">
                 <p class="texte-start w-50 mt-3  ps-4 text-white">Made with by <i
-                        class="bi bi-heart-fill text-black"></i> <strong>SimplonP4</strong></p>
+                    class="bi bi-heart-fill text-black"></i> <strong>SimplonP4</strong></p>
             </div>
         </div>
     </footer>

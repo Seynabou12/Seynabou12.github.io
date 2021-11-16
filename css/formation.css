@@ -16,8 +16,18 @@ nav ul{
     margin-left: 10px;
     text-align: center;
     font-weight: bold;  
+}
+.bar{
+    margin-top:70px;
+    width: 20px; 
+    height: 70vh; 
+    background-color:#CE0033; 
+    position: absolute;
+    height: 800px;
 } 
+
 /* Partie Banniére */
+
 #imgBan{
     filter: saturate(0);
     width: 100%;
@@ -38,23 +48,24 @@ figure figcaption{
     text-transform: uppercase;
 }
 
-.bar{
-    margin-top:70px;
-    width: 20px; 
-    height: 70vh; 
-    background-color:#CE0033; 
-    position: absolute;
-    height: 800px;
-} 
+/* Partie par parcours */
+
 .parparcours{
     margin-top: 50px;
 }
+
+/* Partie par Public */
 .parpublic{
     margin-top: 50px;
 }
+/* Partie partenariat */
+
 .parpartenariat{
     margin-top: 50px;
 }
+
+/* Les Cardes */
+
 .img-card{
     height: 280px;
 }
@@ -65,9 +76,9 @@ figure figcaption{
 .title{
     color: #CE0033;
 }
-.affiche{
+/* .affiche{
     text-decoration: underline;
-}
+} */
 .card-body .triangle{
     height: auto;
     position: absolute;
