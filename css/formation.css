@@ -15,6 +15,7 @@ nav ul{
     width: 20%;
     margin-left: 20px;
     text-align: center;
+    font-family: bold;
 } 
 /* Partie Banniére */
 #imgBan{
@@ -23,16 +24,20 @@ nav ul{
     height: auto;
     
 }
-
-
-.title-age{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
+figure{
+    position: relative;
 }
+figure figcaption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-weight: 900;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
 .bar{
     margin-top:70px;
     width: 20px; 
@@ -252,16 +257,7 @@ h6{
         transform: translate(290%, 60%);
     }
 } 
-figure{
-    position: relative;
-}
-figure figcaption{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #fff;
-    font-weight: 900;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    text-transform: uppercase;
-}
+
+
+
+
