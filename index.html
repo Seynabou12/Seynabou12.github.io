@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <!--Intégration du Header et responsivité-->
     <main>
         <section class="container-fluid">
@@ -27,9 +27,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#">Acceuil</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Fabrique</a></li>
-                       
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle show active" data-bs-toggle="dropdown" href="#"
+                            <a class="nav-link dropdown-toggle show " data-bs-toggle="dropdown" href="#"
                                 role="button" aria-haspopup="true" aria-expanded="true">Formations</a>
                             <div class="bg-danger h-25 w-100 mt-3"></div>
                             <div class="dropdown-menu show" data-bs-popper="none">
@@ -42,8 +41,8 @@
                         <li class="nav-item"><a class="nav-link" href="#">Espaces</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Entités</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="true" aria-expanded="true">Français</a>
+                            <a class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="true">Français</a>
                             <div class="dropdown-menu show" data-bs-popper="none">
                                 <a class="dropdown-item" href="#">Français</a>
                                 <a class="dropdown-item" href="#">Anglais</a>
@@ -57,53 +56,48 @@
 
         <!--Intégration de la Banniére et responsivité -->
         <section>
-            <figure class="">
+            <figure class="banniere">
                 <img src="../images/imagbanniere.jpg" alt="" class="img-fluid" id="imgBan">
                 <figcaption>FORMATIONS</figcaption>
             </figure>
         </section>
 
-
         <!--Intégration de la barre de recherche -->
-
         <section>
-            <nav class="navbar navbar-light bg-white">
-                <div class="container-fluid">
-                    <form class="d-flex search">
+            <div class="row justify-content-center">
+                <div class="col-sm-9 col-md-4 ">
+                    <div class="input-group my-3">
                         <input class="form-control" type="search" placeholder="rechercher une formation">
                         <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
-                    </form>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </section>
-        
-     <!--Intégration des card et la barre partie decouverte -->
+
+        <!--Intégration des card et la barre partie decouverte -->
 
         <section class="container overflow-hidden">
             <article>
-                    <h2 class="title mt-5">PAR PARCOURS</h2>
-                        <p></p>
-                    <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
-                        although modern physicists
-                        usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
-                        spacetime.
-                        The concept of space is considered to be of fundamental importance to an understanding of the
-                        physical universe.
-                    </h5>
+                <h2 class="title mt-5">PAR PARCOURS</h2>
+                <p></p>
+                <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
+                    although modern physicists
+                    usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
+                    spacetime.
+                    The concept of space is considered to be of fundamental importance to an understanding of the
+                    physical universe.
+                </h5>
             </article>
             <section>
                 <div class="row">
                     <div class="col-12 d-flex flex-md-row flex-sm-row  mb-3 mt-4 justify-content-center parcou ">
                         <div class="btn-group d-inline-block d-md-none" role="group"
                             aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check"  autocomplete="off"
-                                >
-                            <label class="btn btn-danger" >DECOUVERTE</label>
-                            <input type="radio" class="btn-check"  autocomplete="off"
-                                >
-                            <label class="btn btn-outline-danger" >INITIATION</label>
-                            <input type="radio" class="btn-check"   autocomplete="off"
->
+                            <input type="radio" class="btn-check" autocomplete="off">
+                            <label class="btn btn-danger">DECOUVERTE</label>
+                            <input type="radio" class="btn-check" autocomplete="off">
+                            <label class="btn btn-outline-danger">INITIATION</label>
+                            <input type="radio" class="btn-check" autocomplete="off">
                             <label class="btn btn-outline-danger">METIER</label>
                         </div>
                     </div>
@@ -116,20 +110,21 @@
                         <div class="bar d-flex flex-column pub">
                             <div class="nav-bar-subdivision d-flex flex-column justify-content-between">
                                 <div class="rectangle d-flex justify-content-start align-items-center ">
-
-                                    <h5 class="btn btn-danger d-flex decouverte"> <img
+                                    <h5 class="btn btn-danger d-flex decouverte"><img
                                             src="images/iconDiscoverRouge-1.svg" class="icons"
-                                            alt=""><span>DECOUVERTE</span> </h5>
+                                            alt=""><span>DECOUVERTE</span>
+                                    </h5>
                                 </div>
                                 <div class="rectangle d-flex justify-content-start align-items-center">
                                     <h5 class="btn btn-danger d-flex initiation"><img src="images/IconFemmeBlanc-1.svg"
-                                            class="icon" alt=""><span>INITIATION</span> </h5>
+                                            class="icon" alt=""><span>INITIATION</span>
+                                    </h5>
                                 </div>
                                 <div class="rectangle d-flex justify-content-start align-items-center">
-
                                     <h5 class="btn btn-danger d-flex metier"><img
-                                        src="images/IconOrienteMetierBlanc-1.svg" class="icon"
-                                        alt=""><span>METIER</span> </h5>
+                                            src="images/IconOrienteMetierBlanc-1.svg" class="icon"
+                                            alt=""><span>METIER</span>
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -193,42 +188,37 @@
             </section>
         </section>
         <div class="container">
-            <div class="row justify-content-end overflow-x-hidden affiche">
-                Tout Afficher
+            <div class="d-flex flex-row-reverse affiche">
+                <i class="bi bi-arrow-right"></i>Tout Afficher
             </div>
         </div>
-
         <!-- Intégration des card et responsivité -->
         <section class="container overflow-hidden">
             <article>
-                
-                    <h2 class=" title mt-5">PAR PUBLIC</h2>
-                        <p></p>
-                    <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
-                        although modern physicists
-                        usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
-                        spacetime.
-                        The concept of space is considered to be of fundamental importance to an understanding of the
-                        physical universe.
-                    </h5>
-               
+                <h2 class=" title mt-5">PAR PUBLIC</h2>
+                <p></p>
+                <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
+                    although modern physicists
+                    usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
+                    spacetime.
+                    The concept of space is considered to be of fundamental importance to an understanding of the
+                    physical universe.
+                </h5>
             </article>
-
-
             <section>
                 <div class="row ">
                     <div class="col-12 col-12 d-flex flex-md-row flex-sm-row mb-3 mt-4 justify-content-center publi">
                         <div class="btn-group d-inline-block d-md-none" role="group"
                             aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
+                            <input type="radio" class="btn-check" name="btnradio" autocomplete="off">
                             <label class="btn btn-danger" for="btnradio1">FEMMES</label>
-                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
+                            <input type="radio" class="btn-check" name="btnradio" autocomplete="off">
                             <label class="btn btn-outline-danger" for="btnradio2">KIDS</label>
-                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
+                            <input type="radio" class="btn-check" name="btnradio" autocomplete="off">
                             <label class="btn btn-outline-danger" for="btnradio3">PSH</label>
-                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
+                            <input type="radio" class="btn-check" name="btnradio" autocomplete="off">
                             <label class="btn btn-outline-danger" for="btnradio3">REFUGIES</label>
-                            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off">
+                            <input type="radio" class="btn-check" name="btnradio" autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -325,44 +315,38 @@
             </section>
         </section>
         <div class="container">
-            <div class="row justify-content-end overflow-x-hidden affiche text-right">
-                Tout Afficher
+            <div class="d-flex flex-row-reverse affiche">
+                <i class="bi bi-arrow-right"></i>Tout Afficher
             </div>
         </div>
-        <!--Intégration des card et responsivité -->
 
+        <!--Intégration des card et responsivité -->
         <section class="container overflow-hidden">
             <article>
-                
-                    <h2 class="title mt-5">PAR PARTENARIAT</h2>
-                        <p></p>
-                    <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
-                        although modern physicists
-                        usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
-                        spacetime.
-                        The concept of space is considered to be of fundamental importance to an understanding of the
-                        physical universe.
-                    </h5>
-              
+                <h2 class="title mt-5">PAR PARTENARIAT</h2>
+                <p></p>
+                <h5 class="lh-base mt-2 mr-5">Physical space is often, conceived in there linear dimensions,
+                    although modern physicists
+                    usually consider it, with time, to be part of a boundles four-dimensionnal continuum known as
+                    spacetime.
+                    The concept of space is considered to be of fundamental importance to an understanding of the
+                    physical universe.
+                </h5>
             </article>
-
-
             <section class="parpartenariat">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 h-75">
                         <div class="card text-center mb-4">
                             <p
                                 class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
-                                <strong>Ecole IA Microsoft by
-                                    Simplon-
-                                    Développeur.Euse En
-                                    Intelligence Artificielle</strong>
+                                <strong>Ecole IA Microsoft bySimplon-Développeur.Euse EnIntelligence
+                                    Artificielle</strong>
                             </p>
                             <div class="card-body mt-4 ">
                                 <div class="triangle"></div>
                                 <img src="images/microsoft.png" alt="...">
-                                <p class="card-text mt-2">Le parcours de formation
-                                    est organisé en six mois formation intense suivid'un
+                                <p class="card-text mt-2">Le parcours de formation est organisé en six mois formation
+                                    intense suivid'un
                                     contrat de professionnalisation de 12mois en alternance
                                 </p>
                                 <a href="#" class="btn btn-danger rounded-pill">Decouvrir la formation</a>
@@ -371,17 +355,16 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 h-75">
                         <div class="card text-center mb-4">
-                            <p class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
-                                <strong>IA Business School TPE/
-                                    PME- Développeur.Euse
-                                    En Intelligence Artificielle</strong>
+                            <p
+                                class="card-header bg-danger img-card text-center d-flex align-items-center text-white h-50">
+                                <strong>IA Business School TPE/ PME- Développeur.EuseEn Intelligence
+                                    Artificielle</strong>
                             </p>
                             <div class="card-body mt-4 ">
                                 <div class="triangle"></div>
                                 <img src="images/iese.png" alt="...">
-                                <p class="card-text mt-2">Le parcours de formation
-                                    est organisé en six mois formation intense suivid'un
-                                    contrat de professionnalisation de 12mois en alternance
+                                <p class="card-text mt-2">Le parcours de formation est organisé en six mois formation
+                                    intense suivid'uncontrat de professionnalisation de 12mois en alternance
                                 </p>
                                 <a href="#" class="btn btn-danger rounded-pill">Decouvrir la formation</a>
                             </div>
@@ -411,8 +394,8 @@
             </section>
         </section>
         <div class="container">
-            <div class="row justify-content-end overflow-x-hidden affiche">
-                Tout Afficher
+            <div class="d-flex flex-row-reverse affiche">
+                <i class="bi bi-arrow-right"></i> Tout Afficher
             </div>
         </div>
 
@@ -421,36 +404,31 @@
 
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3 mt-5 ps-4">
-                    <div class="row logowhite">
+                    <div class="logowhite">
                         <img src="images/logoWhite-1.svg " alt="">
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-md-2">
-                            <img src="images/twitter.png" class="twitter" alt="">
-                        </div>
-                        <div class="col-md-2">
-                            <img src="images/facebook.png" class="face" alt="">
-                        </div>
-                        <div class="col-md-2">
-                            <img src="images/instagram.png" class="insta" alt="">
-                        </div>
-                        <div class="col-md-2">
-                            <img src="images/youtube-icon.svg" class="youtube" alt="">
-                        </div>
+                    <div class=" mt-5 my-5">
+                        <img src="images/twitter.png" class="twitter" alt="">
+
+                        <img src="images/facebook.png" class="face" alt="">
+
+                        <img src="images/instagram.png" class="insta" alt="">
+
+                        <img src="images/youtube-icon.svg" class="youtube" alt="">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 text-white  mt-5">
                     <h3><strong>Voir plus</strong></h3>
                     <p>
-                        A propos
+                        <a href="#" class="text-light text-decoration-none">A propos</a>
                         <br>
-                        Notre histoire
+                        <a href="#" class="text-light text-decoration-none">Notre histoire</a>
                         <br>
-                        Conditions d'utilisation
+                        <a href="#" class="text-light text-decoration-none">Conditions d'utilisations</a>
                         <br>
-                        Politique de confidentialité
+                        <a href="#" class="text-light text-decoration-none">Politiques de confidentialité</a>
                         <br>
-                        FAQ
+                        <a href="#" class="text-light text-decoration-none">FAQ</a>
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 text-white mt-5">
@@ -462,14 +440,15 @@
                         <br>
                         Sénégal
                     </p>
-                    <p>
-                        simplon@email.com
-                        <br>
-                        help@simplon.com
-                        <br>
-                        (221) 77 456 78 90
-                        <br>
-                        (221) 77 654 32 10
+
+                    simplon@email.com
+                    <br>
+                    help@simplon.com
+
+                    <br>
+                    (221) 77 456 78 90
+                    <br>
+                    (221) 77 654 32 10
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3 text-white mt-5">
@@ -487,16 +466,12 @@
             </div>
         </footer>
     </main>
-    <footer class=" bg-danger  mb-0">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 copy">
-                <h6 class="texte-end w-50 mt-3 text-white"><strong>&copy; 2021 Simplon. All rights reserved.</strong>
-                </h6>
-            </div>
-            <div class="col-sm-12 col-md-6  hearts">
-                <p class="texte-start w-50 mt-3  ps-4 text-white">Made with by <i
-                    class="bi bi-heart-fill text-black"></i> <strong>SimplonP4</strong></p>
-            </div>
+    <footer class=" bg-danger">
+        <div
+            class="copyright text-white p-3 mt-0 d-flex align-items-center flex-column flex-sm-row justify-content-between">
+            <span>© 2021 Simplon. All rights reserved.</span>
+            <span class=" ">made with <i class="bi bi-suit-heart-fill text-black"></i> <strong> by
+                    SimplonP4</strong></span>
         </div>
     </footer>
     <script src="bootstrap/js/bootstrap.min.js"></script>

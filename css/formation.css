@@ -25,7 +25,6 @@ nav ul{
     position: absolute;
     height: 800px;
 } 
-
 /* Partie Banniére */
 
 #imgBan{
@@ -47,7 +46,6 @@ figure figcaption{
     font-size: 3rem;
     text-transform: uppercase;
 }
-
 /* Partie par parcours */
 
 .parparcours{
@@ -63,8 +61,7 @@ figure figcaption{
 .parpartenariat{
     margin-top: 50px;
 }
-
-/* Les Cardes */
+/* Les Cartes */
 
 .img-card{
     height: 280px;
@@ -84,9 +81,7 @@ figure figcaption{
     position: absolute;
     width: 50px;
     transform: translateX(350%);
-    top: 21%;
-    
-    
+    top: 21%;    
 }
 .formation{
     color: #CE0033;
@@ -119,8 +114,7 @@ h2{
     position: absolute;
     border: 1px solid #CE0033;
     position: relative;
-    top: -4px;
-    
+    top: -4px;  
 }
 .icon{
     background-color:#CE0033 ;
@@ -138,7 +132,6 @@ h2{
 h6{
     font-weight: bold;
 }
-
 .barre{
     width: 100px;
 }
@@ -273,10 +266,10 @@ h6{
 }
 h2+p {
     border-top: 5px solid rgb(0, 0, 0);
-    width: 100px;
-
-    
+    width: 100px;    
 }
+
 .dropdown-toggle::after {
    color: #CE0033;
-  }
+}
+
