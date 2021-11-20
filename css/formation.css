@@ -116,7 +116,8 @@ h2{
     position: relative;
     top: -4px;  
 }
-.icon{
+.icon
+{
     background-color:#CE0033 ;
     border-radius: 20px;
     border: white;
@@ -204,7 +205,7 @@ h6{
     top: 640px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    font-weight: bold;  
+    font-weight: bold;
 }
 .d-flex{
     display: flex !important;   
@@ -234,7 +235,6 @@ h6{
     position: relative;
     top: 26%;
 }
-
 @media screen and (max-width: 768px){
     .triangle{
         border-left: 25px transparent solid;
@@ -243,6 +243,45 @@ h6{
         width: 0px;height: 0;
         transform: translateX(400%);
         display: none;
+    }
+    .menu, .menu-secondaire{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+        padding-left: 0;
+        transition: all 0.2s;
+    }
+    .menu-secondaire {
+        display: inline-block;
+        z-index: 2000;
+        left: -50%;
+    }
+    .sp-hidden-left {
+        left: 2%;
+        transition: 0.5s ;
+    }
+    .menu p {
+        text-transform: uppercase;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-size: xx-small;
+    }
+    .menu p>span {
+        width: 15px;
+        height: 15px;
+        margin: 0 8px 0px 2px;
+        border-radius: 50%;
+        left: 0;
+    }
+    .menu p:hover, .menu p.active {
+        border: 1px solid transparent;
+        border-left: 5px solid #ce0033;
+    }
+    .menu p {
+        border: 1px solid transparent;
+        border-left: 5px solid transparent;
     }
 } 
 @media screen and (max-width: 1024px){
@@ -254,7 +293,6 @@ h6{
         transform: translateX(450%);
     }
 } 
-
 @media screen and (max-width: 1080px){
     .triangle{
         border-left: 25px transparent solid;
@@ -268,8 +306,53 @@ h2+p {
     border-top: 5px solid rgb(0, 0, 0);
     width: 100px;    
 }
-
 .dropdown-toggle::after {
    color: #CE0033;
+}
+
+.menu {
+    position: absolute;
+    top: 20%;
+    margin-left: 0;
+}
+
+.menu, .secondary-menu {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0;
+    transition: all 2s linear;
+}
+
+.secondary-menu {
+    display: inline-block;
+    z-index: 1000;
+    left: 5%;
+}
+
+
+.menu p:hover, .menu p.active {
+    color: #ce0033;
+    border-color: #ce0033;
+    background: #fff;
+    transition: 0.4s;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.menu p {
+    background-color: #ce0033;
+    color: black;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid transparent;
+    border-left-width: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: large;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
 }
 

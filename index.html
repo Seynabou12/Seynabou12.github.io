@@ -28,8 +28,8 @@
                         <li class="nav-item"><a class="nav-link" href="#">Acceuil</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Fabrique</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle show " data-bs-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="true" aria-expanded="true">Formations</a>
+                            <a class="nav-link dropdown-toggle show " data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="true">Formations</a>
                             <div class="bg-danger h-25 w-100 mt-3"></div>
                             <div class="dropdown-menu show" data-bs-popper="none">
                                 <a class="dropdown-item" href="#">Par Parcours</a>
@@ -75,8 +75,7 @@
         </section>
 
         <!--Intégration des card et la barre partie decouverte -->
-
-        <section class="container overflow-hidden">
+        <section class="container overflow-hidden secondary">
             <article>
                 <h2 class="title mt-5">PAR PARCOURS</h2>
                 <p></p>
@@ -89,7 +88,25 @@
                 </h5>
             </article>
             <section>
-                <div class="row">
+                <div class="row align-items-center p-relative">
+                    <!-- menu secondaire -->
+                    <div class="menu menu-secondaire position-fixed d-md-none secondary-menu-parcours">
+                        <p
+                            class="active align-items-center d-flex p-1 pe-md-3 rounded-pill rounded-start ">
+                            
+                            Decouverte
+                        </p>
+                        <p class="align-items-center d-flex p-1 pe-md-3 rounded-pill rounded-start ">
+                            
+                            Initiation
+                        </p>
+                        <p class="align-items-center d-flex p-1 pe-md-3 rounded-pill rounded-start ">
+                           
+                            Metier
+                        </p>
+                    </div>
+<!-- 
+            <div class="row">
                     <div class="col-12 d-flex flex-md-row flex-sm-row  mb-3 mt-4 justify-content-center parcou ">
                         <div class="btn-group d-inline-block d-md-none" role="group"
                             aria-label="Basic radio toggle button group">
@@ -101,8 +118,9 @@
                             <label class="btn btn-outline-danger">METIER</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
+
             <!--Intégration des card et la barre partie decouverte -->
             <section class="parc">
                 <div class="row">
@@ -159,8 +177,7 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-6 ">
                                 <div class="card text-center mb-4">
-                                    <img src="images/leadership.png" class="card-img-top 
-                                img-card" alt="...">
+                                    <img src="images/leadership.png" class="card-img-top img-card" alt="...">
                                     <div class="card-body">
                                         <h6 class="card-title">LEADERSHIP</h6>
                                         <p class="card-text">At in neque convallissemper
@@ -193,7 +210,7 @@
             </div>
         </div>
         <!-- Intégration des card et responsivité -->
-        <section class="container overflow-hidden">
+        <section class="container overflow-hidden secondary">
             <article>
                 <h2 class=" title mt-5">PAR PUBLIC</h2>
                 <p></p>
@@ -206,7 +223,7 @@
                 </h5>
             </article>
             <section>
-                <div class="row ">
+                <!-- <div class="row ">
                     <div class="col-12 col-12 d-flex flex-md-row flex-sm-row mb-3 mt-4 justify-content-center publi">
                         <div class="btn-group d-inline-block d-md-none" role="group"
                             aria-label="Basic radio toggle button group">
@@ -221,9 +238,23 @@
                             <input type="radio" class="btn-check" name="btnradio" autocomplete="off">
                         </div>
                     </div>
-                </div>
+                </div> -->
+                    <div class="menu menu-secondaire position-fixed d-md-none secondary-menu-public sp-hidden-left">
+                        <p class=" active align-items-center d-flex p-1 p-sm-1 pe-md-3  rounded-pill rounded-start shadow-sm">
+                            Femme
+                        </p>
+                        <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                            Kids
+                        </p>
+                        <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                            
+                            PSH
+                        </p>
+                        <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                            Refugies
+                        </p>
+                    </div>
             </section>
-
             <!-- Intégration des card et responsivité  -->
             <section>
                 <div class="row">
@@ -475,6 +506,7 @@
         </div>
     </footer>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="/javaScript/script.js"></script>
 </body>
 
 </html>
